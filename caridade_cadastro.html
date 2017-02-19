@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="public/img/favicon.ico">
 
-    <title>PaynCare : Caridade</title>
+    <title>PayNGiv : Caridade</title>
 
     <script src="public/js/jquery-3.1.1.js"></script>
 
@@ -53,7 +53,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PaynCare</a>
+                <a class="navbar-brand" href="index.html">PayNGiv</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
@@ -74,8 +74,8 @@
     <div class="container">
         <h2>Cadastro para Instituições de Caridade</h2>
         <p class="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit
-            amet.
+            Para realizar seu cadastro, preencha o formulário abaixo e clique em "enviar".
+
         </p>
         <br/>
         <form class="form-horizontal">
@@ -145,6 +145,51 @@
                 <label class="col-sm-3 control-label">Nome da Mãe <b class="text-danger">*</b></label>
                 <div class="col-lg-9">
                     <input type="text" class="form-control" placeholder="Digite o Nome Completo da Sua Mãe">
+                </div>
+            </div>
+
+            <br/>
+            <h4>Endereço</h4>
+            <br/>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Logradouro <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="text" class="form-control" placeholder="Rua, Avenida, Praça, etc.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Número <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" placeholder="Número" maxlength="6" 
+                        onkeypress="mascara(this, '######'); return SomenteNumero(event);">                        
+                    </div>
+                    <label class="col-sm-4 control-label">Complemento <b class="text-danger">*</b></label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Complemento" />  
+                    </div>                  
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Cidade <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Informe a cidade">
+                    </div>
+                    <label class="col-sm-2 control-label text-left">CEP <b class="text-danger">*</b></label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Informe o CEP" maxlength="9"
+                           onkeypress="mascara(this, '#####-###'); return SomenteNumero(event);">
+                    </div>                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Estado <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <select class="form-control">
+                        <option value="PB">Paraíba - PB</option>
+                    </select>
                 </div>
             </div>
 
@@ -332,7 +377,7 @@
     <div class="container">
         <div class="col-md-6">
                 <address class="text-center">
-                  <strong>&copy; 2017 PaynCare, Inc.</strong><br>
+                  <strong>&copy; 2017 PayNGiv, Inc.</strong><br>
                   1355 Market Street, Suite 900<br>
                   San Francisco, CA 94103<br>                                                 
                 </address>  
@@ -341,7 +386,7 @@
                 <address class="text-center">     
                   <strong>Contacte-nos:</strong><br>
                   <abbr title="Telefone">Tel:</abbr> (123) 456-7890 <br>
-                  <a href="mailto:#">contato@payncare.com</a>
+                  <a href="mailto:#">contato@PayNGiv.com</a>
                 </address>
         </div>
     </div>
