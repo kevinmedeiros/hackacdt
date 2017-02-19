@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    #apps
+    # libs
+    'rest_framework',
+    # apps
     'user',
     'core',
     'api',
@@ -127,3 +128,5 @@ STATIC_URL = '/static/'
 
 
 AUTH_USER_MODEL = 'user.Myuser'
+
+LOGIN_REDIRECT_URL = '/'

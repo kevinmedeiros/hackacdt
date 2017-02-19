@@ -13,8 +13,10 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home/')
+            return redirect('/')
         else:
             form = UserCreationForm()
             args = {'form': form}
             return render(request, 'registration/reg_form.html', args)
+    else:
+        pass

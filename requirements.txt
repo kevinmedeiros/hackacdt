@@ -1,0 +1,5 @@
+Django==1.10.5
+django-filter==1.0.1
+django-registration==2.2
+djangorestframework==3.5.4
+Markdown==2.6.8
