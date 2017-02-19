@@ -133,7 +133,10 @@ AUTH_USER_MODEL = 'user.Myuser'
 LOGIN_REDIRECT_URL = '/dash/'
 
 
-EMAIL_HOST = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'payngiv@gmail.com'
+EMAIL_HOST_PASSWORD = 'a1e2i3o4u5'
+DEFAULT_FROM_EMAIL = 'payngiv@gmail.com'
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True

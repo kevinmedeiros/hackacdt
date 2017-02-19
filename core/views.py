@@ -8,8 +8,16 @@ def home(request):
     return render(request, "home.html")
 
 
-def dash(request):
+def dash_a(request):
     return render(request, "dash.html")
+
+
+def dash_b(request):
+    return render(request, "dash2.html")
+
+
+def dash_c(request):
+    return render(request, "dash3.html")
 
 
 def quemsomos(request):
