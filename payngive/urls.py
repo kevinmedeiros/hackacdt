@@ -17,11 +17,19 @@ from django.conf.urls import url
 from django.contrib import admin
 from core import views as views_core
 from django.contrib.auth import views as auth_views
+from rest_framework import routers
+from api import views as views_payment
+
+router = routers.DefaultRouter()
+router.register(r'payment', views_payment.PaymentViewSet)
 
 urlpatterns = [
-    url(r'^register/$', views_core.register, name='register'),
+    url(r'^registrar/$', views_core.register, name='register'),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
     url(r'^$', views_core.home, name='home'),
+    url(r'quemsomos^$', views_core.home, name='home'),
+    url(r'^contato/$', views_core.contact, name='contact'),
     url(r'^admin/', admin.site.urls),
+    url(r'^api-v01/payment/list$', views_payment.PaymentList.as_view()),
 ]

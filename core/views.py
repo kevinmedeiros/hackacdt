@@ -1,7 +1,15 @@
 from django.shortcuts import render, redirect
-
-# Create your views here.
+from core.froms import ContactForm
 from user.admin import UserCreationForm
+from django.contrib import messages
+
+
+def home(request):
+    return render(request, "home.html")
+
+
+def quemsomos(request):
+    return render(request, "quemsomos.html")
 
 
 def home(request):
@@ -9,14 +17,30 @@ def home(request):
 
 
 def register(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-        else:
-            form = UserCreationForm()
-            args = {'form': form}
-            return render(request, 'registration/reg_form.html', args)
-    else:
-        pass
+    success = False
+    form = UserCreationForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('/')
+    elif request.method == 'POST':
+        messages.error(request, 'Formulário inválido')
+    context = {
+        'form': form,
+        'success': success
+    }
+    return render(request, 'registration/reg_form.html', context)
+
+
+def contact(request):
+    success = False
+    form = ContactForm(request.POST or None)
+    if form.is_valid():
+        form.send_mail()
+        success = True
+    elif request.method == 'POST':
+        messages.error(request, 'Formulário inválido')
+    context = {
+        'form': form,
+        'success': success
+    }
+    return render(request, 'contact.html', context)

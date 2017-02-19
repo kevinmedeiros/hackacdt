@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # libs
     'rest_framework',
+    'widget_tweaks',
     # apps
     'user',
     'core',
@@ -130,3 +131,9 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'user.Myuser'
 
 LOGIN_REDIRECT_URL = '/'
+
+
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
