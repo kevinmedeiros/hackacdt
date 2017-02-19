@@ -1,0 +1,62 @@
+
+    <div class="container">
+        <h2>Cadastro para Vendedores</h2>
+        <p class="text-justify">
+            Para ter acesso a área de negócios, entre com seu usuário e senha. Se não possui registro, crie sua conta.
+        </p>
+        <br/>
+        <div class="col-lg-5">
+            <h4 class="text-success">Já sou Vendedor</h4>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">E-mail</label>
+                    <div class="col-lg-8">
+                        <input type="email" autofocus class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Senha</label>
+                    <div class="col-lg-8">
+                        <input type="password" autofocus class="form-control" placeholder="Senha" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn btn-success">Entrar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-lg-7">
+                    <h4 class="text-info">Crie conta uma PayNGiv para o seu negócio</h4>
+                    <p class="text-justify">E receba pagamentos por seus produtos ou serviços em seu site.</p>
+                    <p><a class="btn btn-primary btn-sm" href="{% url 'register' %}" role="button">Criar sua conta. É gratis! &raquo;</a></p>
+        </div>
+    </div> <!-- /container -->
+
+    <footer class="footer">
+    <div class="container">
+        <div class="col-md-6">
+                <address class="text-center">
+                  <strong>&copy; 2017 PayNGiv, Inc.</strong><br>
+                  1355 Market Street, Suite 900<br>
+                  San Francisco, CA 94103<br>                                                 
+                </address>  
+        </div>
+        <div class="col-md-6">
+                <address class="text-center">     
+                  <strong>Contacte-nos:</strong><br>
+                  <abbr title="Telefone">Tel:</abbr> (123) 456-7890 <br>
+                  <a href="mailto:#">contato@PayNGiv.com</a>
+                </address>
+        </div>
+    </div>
+    </footer>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

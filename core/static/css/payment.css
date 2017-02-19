@@ -1,0 +1,26 @@
+/* Payments */
+.payment-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #e7eaec;
+}
+.payment-icon-big {
+    font-size: 60px;
+    color: #d1dade;
+}
+.payments-method.panel-group .panel + .panel {
+    margin-top: -1px;
+}
+.payments-method .panel-heading {
+    padding: 15px;
+}
+.payments-method .panel {
+    border-radius: 0;
+}
+.payments-method .panel-heading h5 {
+    margin-bottom: 5px;
+}
+.payments-method .panel-heading i {
+    font-size: 26px;
+}

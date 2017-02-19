@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <div class="container">
+        <h2>Atividades Recentes: <small>01/02/2017 à 19/02/2017</small></h2>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">Saldo</span>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">186,20</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Pedidos</span>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">1.263</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-primary pull-right">Itens Vendidos</span>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">80</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-danger pull-right">Visitantes</span>
+                        <h5></h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">15</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="ibox-content">
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pedido</th>
+                        <th>Valor</th>
+                        <th>Usuário</th>
+                        <th>Fone</th>
+                        <th>Data da Compra</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>243</td>
+                        <td>529,00</td>
+                        <td>Jose de Oliveira</td>
+                        <td>83 9 9980-7092</td>
+                        <td>Fev 18, 2017</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>571</td>
+                        <td>734,00</td>
+                        <td>Maria Da Guia</td>
+                        <td>83 98706-2536</td>
+                        <td>Fev 14, 2017</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

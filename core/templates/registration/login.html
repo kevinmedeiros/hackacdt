@@ -1,12 +1,33 @@
 {% extends 'base.html' %}
-
-{% block title %}Login{% endblock %}
-
 {% block content %}
-  <h2>Login</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
+    <div class="container">
+        {% block title %}<h2>Cadastro</h2>{% endblock %}
+        <p class="text-justify">
+            Para ter acesso a área de negócios, entre com seu usuário e senha. Se não possui registro, crie sua conta.
+        </p>
+        <br/>
+        <div class="col-lg-5">
+            <h4 class="text-success">Já sou Cadastrado</h4>
+            <form class="form-horizontal" method="post">{% csrf_token %}
+                <div class="form-group">
+                    <div class="col-lg-8">
+                       {{ form.as_p }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn btn-success">Entrar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-lg-7">
+                    <h4 class="text-info">Crie conta uma PayNGiv para o seu negócio</h4>
+                    <p class="text-justify">E receba pagamentos por seus produtos ou serviços em seu site.</p>
+                    <p><a class="btn btn-primary btn-sm" href="{% url 'register' %}" role="button">Criar sua conta. É gratis! &raquo;</a></p>
+        </div>
+    </div> <!-- /container -->
 {% endblock %}

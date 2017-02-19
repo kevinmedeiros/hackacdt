@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="public/img/favicon.ico">
+
+    <title>PayNGiv : Comprar</title>
+
+    <script src="public/js/jquery-3.1.1.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="public/css/payment.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="public/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="public/js/tool.js"></script>
+    <style type="text/css">
+        body {
+            min-height: auto;
+            padding-top: 70px;
+        }
+    </style>
+    <script src="public/js/tool.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">PayNGiv</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="vender.html">Vender</a></li>
+                    <li class="active"><a href="comprar.html">Comprar</a></li>
+                    <li><a href="caridade.html">Caridade</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Cadastro para Compradores</h2>
+        <p class="text-justify">
+            Para realizar seu cadastro, preencha o formulário abaixo e clique em "enviar".
+
+        </p>
+        <br/>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Nome Completo<b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="text" autofocus class="form-control" placeholder="Digite seu Nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">CPF <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="text" class="form-control" placeholder="Digite seu CPF" maxlength="14"
+                           onkeypress="mascara(this, '###.###.###-##'); return SomenteNumero(event);">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">E-mail <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Confirme seu E-mail <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="email" class="form-control" placeholder="Confirmação do seu e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Fone <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="tel" class="form-control" maxlength="12" placeholder="00 0000-0000"
+                           onkeypress="mascara(this, '## ####-####'); return SomenteNumero(event);">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Facebook</label>
+                <div class="col-lg-9">
+                    <input type="text" class="form-control" placeholder="Digite seu nome de usuário ">
+                    <small class="help-block text-danger">Informe seu nome de usuário se desejar ser marcado quando
+                        realizar uma doação
+                    </small>
+                </div>
+            </div>
+
+            <br/>
+            <h4>Endereço</h4>
+            <br/>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Logradouro <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="text" class="form-control" placeholder="Rua, Avenida, Praça, etc.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Número <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" placeholder="Número" maxlength="6" 
+                        onkeypress="mascara(this, '######'); return SomenteNumero(event);">                        
+                    </div>
+                    <label class="col-sm-4 control-label">Complemento <b class="text-danger">*</b></label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Complemento" />  
+                    </div>                  
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Cidade <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Informe a cidade">
+                    </div>
+                    <label class="col-sm-2 control-label text-left">CEP <b class="text-danger">*</b></label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Informe o CEP" maxlength="9"
+                           onkeypress="mascara(this, '#####-###'); return SomenteNumero(event);">
+                    </div>                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Estado <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <select class="form-control">
+                        <option value="PB">Paraíba - PB</option>
+                    </select>
+                </div>
+            </div>
+            
+            <br/>
+            <h4>Senha de acesso</h4>
+            <br/>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Senha <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="password" class="form-control" placeholder="Digite sua Senha">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Confirme sua Senha <b class="text-danger">*</b></label>
+                <div class="col-lg-9">
+                    <input type="password" class="form-control" placeholder="Confirme sua Senha">
+                </div>
+            </div>
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Número do Cartão</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="Number"
+                                               placeholder="0000 0000 0000 0000" required maxlength="19"
+                                               onkeypress="mascara(this, '#### #### #### ####'); return SomenteNumero(event);">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-7 col-md-7">
+                                <div class="form-group">
+                                    <label>Data de Validade</label>
+                                    <input type="text" class="form-control" name="Expiry" placeholder="MM / YY" required maxlength="5"
+                                           onkeypress="mascara(this, '##/##'); return SomenteNumero(event);">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-md-3 pull-right">
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" name="CVC" placeholder="000" required maxlength="3"
+                                           onkeypress="return SomenteNumero(event);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>Nome Impresso no Cartão</label>
+                                    <input type="text" class="form-control text-uppercase" name="nameCard" placeholder="SEU NOME">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+
+            <div class="form-group form-">
+                <div class="modal-footer">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="col-md-6">
+                <address class="text-center">
+                  <strong>&copy; 2017 PayNGiv, Inc.</strong><br>
+                  1355 Market Street, Suite 900<br>
+                  San Francisco, CA 94103<br>                                                 
+                </address>  
+        </div>
+        <div class="col-md-6">
+                <address class="text-center">     
+                  <strong>Contacte-nos:</strong><br>
+                  <abbr title="Telefone">Tel:</abbr> (123) 456-7890 <br>
+                  <a href="mailto:#">contato@PayNGiv.com</a>
+                </address>
+        </div>
+    </div>
+    </footer>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
