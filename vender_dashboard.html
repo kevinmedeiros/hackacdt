@@ -71,344 +71,112 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">
-        <h2>Cadastro para Vendedores</h2>
-        <p class="text-justify">
-            Para realizar seu cadastro, preencha o formulário abaixo e clique em "enviar".
-        </p>
+
+    <small class="container">
+        <h2>Atividades Recentes: <small>01/02/2017 à 19/02/2017</small></h2>
+
         <br/>
-        <form class="form-horizontal">
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Nome Fantasia <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" autofocus class="form-control" placeholder="Digite seu Nome">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">CNPJ <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Digite seu CNPJ" maxlength="18"
-                           onkeypress="mascara(this, '##.###.###/####-##'); return SomenteNumero(event);">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">E-mail <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Confirme seu E-mail <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="email" class="form-control" placeholder="Confirmação do seu e-mail">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Fone <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="tel" class="form-control" maxlength="12" placeholder="00 0000-0000"
-                           onkeypress="mascara(this, '## ####-####'); return SomenteNumero(event);">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Site</label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="https://seusite.com.br">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Segmento <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <select class="form-control">
-                        <option>Tecnologia</option>
-                        <option>Imobiliaria</option>
-                        <option>Varegista</option>
-                        <option>Atacadista</option>
-                        <option>Indústria</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Identificação</label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Nome ultilizado para identificação">
-                    <small class="help-block text-danger">Nome ultilizado para identificação na fatura do cartão</small>
-                </div>
-            </div>
 
-            <br/>
-            <h4>Dados do Responsável</h4>
-            <br/>
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Nome Completo <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Digite seu nome completo">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">CPF <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Digite seu CPF" maxlength="14"
-                           onkeypress="mascara(this, '###.###.###-##'); return SomenteNumero(event);">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Data de Nascimento <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Digite Sua Data de Nascimento">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Nome da Mãe <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Digite o Nome Completo da Sua Mãe">
-                </div>
-            </div>
-
-            <br/>
-            <h4>Endereço</h4>
-            <br/>
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Logradouro <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="text" class="form-control" placeholder="Rua, Avenida, Praça, etc.">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Número <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" placeholder="Número" maxlength="6" 
-                        onkeypress="mascara(this, '######'); return SomenteNumero(event);">                        
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">Saldo</span>
                     </div>
-                    <label class="col-sm-4 control-label">Complemento <b class="text-danger">*</b></label>
-                    <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="Complemento" />  
-                    </div>                  
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Cidade <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" placeholder="Informe a cidade">
-                    </div>
-                    <label class="col-sm-2 control-label text-left">CEP <b class="text-danger">*</b></label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Informe o CEP" maxlength="9"
-                           onkeypress="mascara(this, '#####-###'); return SomenteNumero(event);">
-                    </div>                    
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Estado <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <select class="form-control">
-                        <option value="PB">Paraíba - PB</option>
-                    </select>
-                </div>
-            </div>
-
-
-            <br/>
-            <h4>Dados Bancários</h4>
-            <br/>
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Banco <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <select class="form-control">
-                        <option value="001">001 - Banco do Brasil S.A.</option>
-                        <option value="341">341 - Banco Itaú S.A.</option>
-                        <option value="033">033 - Banco Santander (Brasil) S.A.</option>
-                        <option value="356">356 - Banco Real S.A. (antigo)</option>
-                        <option value="652">652 - Itaú Unibanco Holding S.A.</option>
-                        <option value="237">237 - Banco Bradesco S.A.</option>
-                        <option value="745">745 - Banco Citibank S.A.</option>
-                        <option value="399">399 - HSBC Bank Brasil S.A. – Banco Múltiplo</option>
-                        <option value="104">104 - Caixa Econômica Federal</option>
-                        <option value="389">389 - Banco Mercantil do Brasil S.A.</option>
-                        <option value="453">453 - Banco Rural S.A.</option>
-                        <option value="422">422 - Banco Safra S.A.</option>
-                        <option value="633">633 - Banco Rendimento S.A.</option>
-                        <option value="246">246 - Banco ABC Brasil S.A.</option>
-                        <option value="025">025 - Banco Alfa S.A.</option>
-                        <option value="641">641 - Banco Alvorada S.A.</option>
-                        <option value="029">029 - Banco Banerj S.A.</option>
-                        <option value="038">038 - Banco Banestado S.A.</option>
-                        <option value="000">000 - Banco Bankpar S.A.</option>
-                        <option value="740">740 - Banco Barclays S.A.</option>
-                        <option value="107">107 - Banco BBM S.A.</option>
-                        <option value="031">031 - Banco Beg S.A.</option>
-                        <option value="096">096 - Banco BM&F de Serviços de Liquidação e Custódia S.A</option>
-                        <option value="318">318 - Banco BMG S.A.</option>
-                        <option value="752">752 - Banco BNP Paribas Brasil S.A.</option>
-                        <option value="248">248 - Banco Boavista Interatlântico S.A.</option>
-                        <option value="036">036 - Banco Bradesco BBI S.A.</option>
-                        <option value="204">204 - Banco Bradesco Cartões S.A.</option>
-                        <option value="225">225 - Banco Brascan S.A.</option>
-                        <option value="044">044 - Banco BVA S.A.</option>
-                        <option value="263">263 - Banco Cacique S.A.</option>
-                        <option value="473">473 - Banco Caixa Geral – Brasil S.A.</option>
-                        <option value="222">222 - Banco Calyon Brasil S.A.</option>
-                        <option value="040">040 - Banco Cargill S.A.</option>
-                        <option value="M08">M08 - Banco Citicard S.A.</option>
-                        <option value="M19">M19 - Banco CNH Capital S.A.</option>
-                        <option value="215">215 - Banco Comercial e de Investimento Sudameris S.A.</option>
-                        <option value="756">756 - Banco Cooperativo do Brasil S.A. – BANCOOB</option>
-                        <option value="748">748 - Banco Cooperativo Sicredi S.A.</option>
-                        <option value="505">505 - Banco Credit Suisse (Brasil) S.A.</option>
-                        <option value="229">229 - Banco Cruzeiro do Sul S.A.</option>
-                        <option value="003">003 - Banco da Amazônia S.A.</option>
-                        <option value="707">707 - Banco Daycoval S.A.</option>
-                        <option value="M06">M06 - Banco de Lage Landen Brasil S.A.</option>
-                        <option value="024">024 - Banco de Pernambuco S.A. – BANDEPE</option>
-                        <option value="456">456 - Banco de Tokyo-Mitsubishi UFJ Brasil S.A.</option>
-                        <option value="214">214 - Banco Dibens S.A.</option>
-                        <option value="047">047 - Banco do Estado de Sergipe S.A.</option>
-                        <option value="037">037 - Banco do Estado do Pará S.A.</option>
-                        <option value="041">041 - Banco do Estado do Rio Grande do Sul S.A.</option>
-                        <option value="004">004 - Banco do Nordeste do Brasil S.A.</option>
-                        <option value="265">265 - Banco Fator S.A.</option>
-                        <option value="M03">M03 - Banco Fiat S.A.</option>
-                        <option value="224">224 - Banco Fibra S.A.</option>
-                        <option value="626">626 - Banco Ficsa S.A.</option>
-                        <option value="394">394 - Banco Finasa BMC S.A.</option>
-                        <option value="M18">M18 - Banco Ford S.A.</option>
-                        <option value="233">233 - Banco GE Capital S.A.</option>
-                        <option value="734">734 - Banco Gerdau S.A.</option>
-                        <option value="M07">M07 - Banco GMAC S.A.</option>
-                        <option value="612">612 - Banco Guanabara S.A.</option>
-                        <option value="M22">M22 - Banco Honda S.A.</option>
-                        <option value="063">063 - Banco Ibi S.A. Banco Múltiplo</option>
-                        <option value="M11">M11 - Banco IBM S.A.</option>
-                        <option value="604">604 - Banco Industrial do Brasil S.A.</option>
-                        <option value="320">320 - Banco Industrial e Comercial S.A.</option>
-                        <option value="653">653 - Banco Indusval S.A.</option>
-                        <option value="630">630 - Banco Intercap S.A.</option>
-                        <option value="249">249 - Banco Investcred Unibanco S.A.</option>
-                        <option value="184">184 - Banco Itaú BBA S.A.</option>
-                        <option value="479">479 - Banco ItaúBank S.A</option>
-                        <option value="M09">M09 - Banco Itaucred Financiamentos S.A.</option>
-                        <option value="376">376 - Banco J. P. Morgan S.A.</option>
-                        <option value="074">074 - Banco J. Safra S.A.</option>
-                        <option value="217">217 - Banco John Deere S.A.</option>
-                        <option value="065">065 - Banco Lemon S.A.</option>
-                        <option value="600">600 - Banco Luso Brasileiro S.A.</option>
-                        <option value="755">755 - Banco Merrill Lynch de Investimentos S.A.</option>
-                        <option value="746">746 - Banco Modal S.A.</option>
-                        <option value="151">151 - Banco Nossa Caixa S.A.</option>
-                        <option value="045">045 - Banco Opportunity S.A.</option>
-                        <option value="623">623 - Banco Panamericano S.A.</option>
-                        <option value="611">611 - Banco Paulista S.A.</option>
-                        <option value="643">643 - Banco Pine S.A.</option>
-                        <option value="638">638 - Banco Prosper S.A.</option>
-                        <option value="747">747 - Banco Rabobank International Brasil S.A.</option>
-                        <option value="M16">M16 - Banco Rodobens S.A.</option>
-                        <option value="072">072 - Banco Rural Mais S.A.</option>
-                        <option value="250">250 - Banco Schahin S.A.</option>
-                        <option value="749">749 - Banco Simples S.A.</option>
-                        <option value="366">366 - Banco Société Générale Brasil S.A.</option>
-                        <option value="637">637 - Banco Sofisa S.A.</option>
-                        <option value="464">464 - Banco Sumitomo Mitsui Brasileiro S.A.</option>
-                        <option value="M20">M20 - Banco Toyota do Brasil S.A.</option>
-                        <option value="634">634 - Banco Triângulo S.A.</option>
-                        <option value="208">208 - Banco UBS Pactual S.A.</option>
-                        <option value="M14">M14 - Banco Volkswagen S.A.</option>
-                        <option value="655">655 - Banco Votorantim S.A.</option>
-                        <option value="610">610 - Banco VR S.A.</option>
-                        <option value="370">370 - Banco WestLB do Brasil S.A.</option>
-                        <option value="021">021 - BANESTES S.A. Banco do Estado do Espírito Santo</option>
-                        <option value="719">719 - Banif-Banco Internacional do Funchal (Brasil)S.A.</option>
-                        <option value="073">073 - BB Banco Popular do Brasil S.A.</option>
-                        <option value="078">078 - BES Investimento do Brasil S.A.-Banco de Investimento</option>
-                        <option value="069">069 - BPN Brasil Banco Múltiplo S.A.</option>
-                        <option value="070">070 - BRB – Banco de Brasília S.A.</option>
-                        <option value="477">477 - Citibank N.A.</option>
-                        <option value="487">487 - Deutsche Bank S.A. – Banco Alemão</option>
-                        <option value="751">751 - Dresdner Bank Brasil S.A. – Banco Múltiplo</option>
-                        <option value="062">062 - Hipercard Banco Múltiplo S.A.</option>
-                        <option value="492">492 - ING Bank N.V.</option>
-                        <option value="488">488 - JPMorgan Chase Bank</option>
-                        <option value="409">409 - UNIBANCO – União de Bancos Brasileiros S.A.</option>
-                        <option value="230">230 - Unicard Banco Múltiplo S.A.</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Agência <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <div class="col-sm-3 ">
-                        <input type="text" class="form-control" placeholder="000000" maxlength="6"
-                               onkeypress="return SomenteNumero(event);">
-                    </div>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" placeholder="00" maxlength="2"
-                               onkeypress="return SomenteNumero(event);">
+                    <div class="ibox-content">
+                        <h1 class="no-margins">186,20</h1>
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Conta <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <div class="col-sm-3 ">
-                        <input type="text" class="form-control" placeholder="000000" maxlength="6"
-                               onkeypress="return SomenteNumero(event);">
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Pedidos</span>
                     </div>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" placeholder="00" maxlength="2"
-                               onkeypress="return SomenteNumero(event);">
+                    <div class="ibox-content">
+                        <h1 class="no-margins">1.263</h1>
                     </div>
                 </div>
             </div>
-
-            <br/>
-            <h4>Senha de acesso</h4>
-            <br/>
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Senha <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="password" class="form-control" placeholder="Digite sua Senha">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">Confirme sua Senha <b class="text-danger">*</b></label>
-                <div class="col-lg-9">
-                    <input type="password" class="form-control" placeholder="Confirme sua Senha">
-                </div>
-            </div>
-
-            <div class="form-group form-">
-                <div class="modal-footer">
-                    <label class="col-sm-2 control-label"></label>
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-success">Enviar</button>
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-primary pull-right">Itens Vendidos</span>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">80</h1>
                     </div>
                 </div>
             </div>
-        </form>
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-danger pull-right">Visitantes</span>
+                        <h5></h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">15</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="ibox-content">
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pedido</th>
+                        <th>Valor</th>
+                        <th>Usuário</th>
+                        <th>Fone</th>
+                        <th>Data da Compra</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>243</td>
+                        <td>529,00</td>
+                        <td>Jose de Oliveira</td>
+                        <td>83 9 9980-7092</td>
+                        <td>Fev 18, 2017</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>571</td>
+                        <td>734,00</td>
+                        <td>Maria Da Guia</td>
+                        <td>83 98706-2536</td>
+                        <td>Fev 14, 2017</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
     </div>
 
     <footer class="footer">
-    <div class="container">
-        <div class="col-md-6">
+        <div class="container">
+            <div class="col-md-6">
                 <address class="text-center">
-                  <strong>&copy; 2017 PayNGiv, Inc.</strong><br>
-                  1355 Market Street, Suite 900<br>
-                  San Francisco, CA 94103<br>                                                 
-                </address>  
-        </div>
-        <div class="col-md-6">
-                <address class="text-center">     
-                  <strong>Contacte-nos:</strong><br>
-                  <abbr title="Telefone">Tel:</abbr> (123) 456-7890 <br>
-                  <a href="mailto:#">contato@PayNGiv.com</a>
+                    <strong>&copy; 2017 PayNGiv, Inc.</strong><br>
+                    1355 Market Street, Suite 900<br>
+                    San Francisco, CA 94103<br>
                 </address>
+            </div>
+            <div class="col-md-6">
+                <address class="text-center">
+                    <strong>Contacte-nos:</strong><br>
+                    <abbr title="Telefone">Tel:</abbr> (123) 456-7890 <br>
+                    <a href="mailto:#">contato@PayNGiv.com</a>
+                </address>
+            </div>
         </div>
-    </div>
     </footer>
 
 </div> <!-- /container -->
